@@ -30,4 +30,4 @@ There are two ways of getting online friends by VK API:
         def get_online_friends_list(all_friends_info):
             return [friend for friend in all_friends_info if friend["online"] == 1]
         
-Comparing with first way, second allows *to order friends list by name* with `order="name"` parameter, which is more convenient for me than  `"random"` and `"hints"` type of order in first way method.  However, *it has additional online-checking function* and *longer code length*. Also, as it is written in vk.API documentation *it works slower* then the other order types. According to analyzing, it was choosen to write it in a first way.
+Comparing with first way, second allows *to order friends list by name* with `order="name"` parameter, which is more convenient for me than  `"random"` and `"hints"` type of order in first way method.  However, *it has additional online-checking function* and *longer code length*. Also, as it is written in vk.API documentation *it works slower* and comparing by help of "TimeIt" then the other order types. According to analyzing, it was choosen to write it in a first way.
